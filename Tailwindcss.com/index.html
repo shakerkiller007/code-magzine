@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  
+       
+       *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+       }
+     
+     body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #343a40;
+       
+      }
+
+    .accordion{
+        width: 700px;
+        margin: 100px auto;
+        display:flex;
+        flex-direction: column;
+        gap:24px; 
+        
+    }  
+    .item{
+       box-shadow: 0 32px 34px  rgba(0, 0, 0, 0.1);
+       padding: 24px;
+       display: grid;
+       grid-template-columns: auto 1fr auto;
+       column-gap: 24px;
+       row-gap: 32px;
+       align-items: center;
+    }
+
+    .number,.text{
+     font-size: 24px;
+     font-weight: 500;
+     /* color: #087f5b; */
+    }
+    
+    .number{
+     color: #ced4da;
+    }
+
+    .icon{
+      width: 25px;
+      height: 24px;
+      stroke:#087f5b;
+    }
+    .hidden-box{
+      grid-column: 2;
+      display: none;
+    }
+    .hidden-box p{
+        line-height: 1.6;
+        margin-bottom: 24px;
+    }
+    .hidden-box ul{
+        color:#868e96;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        
+    }
+    
+    .open{
+      border-top: 4px solid #087f5b;
+    }
+    .open .hidden-box{
+      display: block;
+    }
+    .open .number, .open .text{
+      color:#087f5b;
+    }
+    </style>
+</head>
+<body>
+  <div class="accordion">
+    <div class="item">
+    <p class="number">01</p>
+    <p class="text">Where are these chairs assembled?</p>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+     <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+     </svg>
+   
+    <div class="hidden-box">
+     <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nisi laboriosam distinctio. Sit quibusdam tempora nulla reiciendis expedita neque error ab blanditiis  sequi eius, dolores numquam. Culpa iure nisi minima hic soluta  Quia  ex aut possimus laborum neque vitae deserunt commodi autem quis excepturi ullam assumenda omnis, numquam praesentium itaque, saepe enim ab? Nesciunt laudantium perspiciatis praesentium hic, accusantium voluptas molestias, commodi delectus est at repellendus nisi consequuntur, unde similique animi eaque distinctio. Illum!
+     </p>
+     <ul>
+         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam deserunt doloremque a ab optio totam error laborum. minima est temporibus adipisci.</li>
+         <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil magnam beatae repudiandae quo ratione accusamus labore.</li>
+         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cupiditate provident quae, dicta repudiandae temporibus.</li>
+      </ul>
+    </div>
+   </div>
+ 
+   <div class="item open">
+   <p class="number">02</p>
+   <p class="text">How long do I have to return my chair?</p>
+   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+    </svg>
+  
+   <div class="hidden-box">
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nisi laboriosam distinctio. Sit quibusdam tempora nulla reiciendis expedita neque error ab blanditiis  sequi eius, dolores numquam. Culpa iure nisi minima hic soluta  Quia  ex aut possimus laborum neque vitae deserunt commodi autem quis excepturi ullam assumenda omnis, numquam praesentium itaque, saepe enim ab? Nesciunt laudantium perspiciatis praesentium hic, accusantium voluptas molestias, commodi delectus est at repellendus nisi consequuntur, unde similique animi eaque distinctio. Illum!
+    </p>
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam deserunt doloremque a ab optio totam error laborum. minima est temporibus adipisci.</li>
+        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil magnam beatae repudiandae quo ratione accusamus labore.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cupiditate provident quae, dicta repudiandae temporibus.</li>
+     </ul>
+   </div>
+  </div>
+
+  <div class="item">
+  <p class="number">03</p>
+  <p class="text">Do you ship to countries outside the EU?</p>
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+   <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+   </svg>
+ 
+  <div class="hidden-box">
+   <p>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nisi laboriosam distinctio. Sit quibusdam tempora nulla reiciendis expedita neque error ab blanditiis  sequi eius, dolores numquam. Culpa iure nisi minima hic soluta  Quia  ex aut possimus laborum neque vitae deserunt commodi autem quis excepturi ullam assumenda omnis, numquam praesentium itaque, saepe enim ab? Nesciunt laudantium perspiciatis praesentium hic, accusantium voluptas molestias, commodi delectus est at repellendus nisi consequuntur, unde similique animi eaque distinctio. Illum!
+   </p>
+   <ul>
+       <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam deserunt doloremque a ab optio totam error laborum. minima est temporibus adipisci.</li>
+       <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil magnam beatae repudiandae quo ratione accusamus labore.</li>
+       <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cupiditate provident quae, dicta repudiandae temporibus.</li>
+    </ul>
+  </div>
+ </div>
+</div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-family: "Rubik", sans-serif;
+            color: #444;
+        }
+        
+        .container{
+            margin: 0 auto;
+            width: 1000px;
+
+        }
+        
+        header{
+            height: 140vh;
+            position:relative;
+            background-repeat: no-repeat;
+            background-image: url(https://omnifood.dev/img/hero.png);
+
+
+        }
+
+        nav {
+            font-size: 20px;
+            font-weight: 700;
+            display: flex;
+            justify-content: space-between;
+            background-image: linear-gradient(to right, red, blue);
+            
+        }
+        
+        .header-container{
+            width: 1100px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+          
+            transform: translate(-50%, -50%);
+        }
+        
+        .header-container-inner{
+            width: 50%;
+
+        }
+        h1 {
+            font-size: 52px;
+            margin-bottom: 32px;
+            line-height: 1.7;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 48px;
+        }
+
+        .btn:link,
+        .btn:visited {
+            font-size: 20px;
+            font-weight: 600;
+            background-color: #e67e22;
+            text-decoration: none;
+            padding: 16px 32px;
+            display: inline-block;
+            border-radius: 9px;
+        }
+
+        h2{
+            font-size: 44px;
+            margin-bottom: 48px;
+        }
+
+        section{
+            padding: 96px 0;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <header>
+            <nav class="container">
+                <div>LOGO</div>
+                <DIV>NAVIGATION</DIV>
+    
+            </nav>
+    
+            <div class="header-container">
+                <div class="header-container-inner">
+                    <h1> A healty meal delivered to your door, every single day</h1>
+                    <p>
+                        The smart 365-days-per-year food subscription that will make you eat
+                        healty again. Taliored to your personal tastes and nutritional needs
+        
+                    </p>
+                    <a href="#" class="btn">Start eating well</a>
+                </div>
+            </div>
+    </header>
+    <section>
+        <div class="container">
+            <h2>Some random heading</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, qui. Ad a id, sunt deserunt sapiente
+            dolorum nemo excepturi quia consequuntur. Suscipit aperiam ut expedita alias rem iure, quasi debitis
+            obcaecati, quis, soluta dicta necessitatibus qui rerum enim. Vel officia minima dolores veniam odio
+            exercitationem voluptate accusamus molestiae. Nobis, consequuntur enim suscipit consectetur natus, nemo
+            corrupti deleniti quisquam a quod quasi sequi, accusamus assumenda.
+        </p>
+        </div>
+    </section>
+</body>
+
+</html>
